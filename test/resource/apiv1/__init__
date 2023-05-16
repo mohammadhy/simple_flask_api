@@ -1,0 +1,9 @@
+from test.test import apiv1
+from test.resource.apiv1.student import StudentResource
+
+apiv1.add_resource(
+	StudentResource, 
+	"/students",
+	 methods=["GET", "POST"],
+	 endpoint="students"
+)
